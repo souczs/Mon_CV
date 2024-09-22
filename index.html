@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Création de la branch meta & création de l'issue puis merge branch meta vers la branch main puis clôture de l'issue -->
+    <!-- Création de la branch meta & création de l'issue puis merge branch meta vers main avec pull request puis clôture de l'issue & pull -->
     <meta name="Curriculum Vitæ" content="Mon parcours scolaire et professionnel dans le cadre de la recherche de job."/>
     <meta name="robots" content="noindex"/>
     <meta charset="UTF-8"/>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+    <!-- Création de la branch intro puis merge branch intro vers main en local & push -->
     <section class="intro">
         <!-- Pas de photo de moi-même mais une photo personnelle de vacancecs -->
         <img src="./img/profil.JPG" alt="Photo d'un éléphant à Mysore" class="intro__img">
@@ -19,11 +20,80 @@
         <p class="intro__job">Developpeuse web junior</p>
     </section>
     
+    <!-- Création de la branch contact puis merge branch contact vers main avec pull request & pull -->
     <address class="contact">
             <a href="https://maps.app.goo.gl/m72Yz3LqY2RtAQC8A" target="_blank" class="contact__address">18 Rue Clairaut<br>75017 Paris</a>
             <a href="mailto:soniaeb@outlook.fr" class="contact__email">soniaeb@outlook.fr</a>
             <a href="tel:0366060201" class="contact__tel">0366060201</a>
     </address>
 
+    <section id="block">
+        <!-- Division en 2 blocs pour les aligner avec Flexbox -->
+        <div class="leftblock" id="block1">
+            <p class ="leftblock__info">A propos</p>
+            <p class="leftblock__infodescription">Professionnelle <strong>dynamique</strong> et <strong>polyvalente</strong>, je suis passionnée par le développement de solutions innovantes et
+            l'amélioration continue des processus. Dotée d'excellentes compétences en communication et en gestion de
+            projet, je sais travailler efficacement <strong>en équipe</strong> tout en m'adaptant rapidement aux défis changeants.
+            Motivée par l'apprentissage et l'atteinte d'objectifs ambitieux, je mets un point d'honneur à livrer des
+            résultats de <strong>qualité</strong> tout en contribuant à la réussite collective de l'organisation.</p>
+        
+            <p class="leftblock__lang">Langues parlées</p>
+            <ul class="leftblock__langlist">
+                <li class="leftblock__langitem" id="item1">Français - Langue maternelle</li>
+                <li class="leftblock__langitem" id="item2">Anglais - Intermédiaire</li>
+                <li class="leftblock__langitem" id="item3">Espagnol - Débutant</li>
+            </ul>
+        
+            <p class="leftblock__hobby">Centres d'intérêt</p>
+            <ul class="leftblock__hobbylist">
+                <li class="leftblock__hobbyitem" id="item1">Lecture</li>
+                <li class="leftblock__hobbyitem" id="item2">Cuisine</li>
+                <li class="leftblock__hobbyitem" id="item2">Voyages</li>
+                <li class="leftblock__hobbyitem" id="item3">Sport</li>
+            </ul>
+        </div>
+        <div class="rightblock" id="block2">
+            <p class="rightblock__jobexp">Expériences professionnelles</p>
+            <p class="rightblock__jobexp-place">Coordinatrice logistique chez CEVA LOGISITICS</p>
+            <p class="rightblock__jobexp-date">De Février 2023 à Aujourd'hui</p>
+            <ul class="rightblock__jobexp-list">
+                <li class="rightblock__jobexp-item" id="item3">Coordination des flux clients</li>
+                <li class="rightblock__jobexp-item" id="item1">Gestion de la relation client</li>
+                <li class="rightblock__jobexp-item" id="item2">Elaboration et mise à jour de KPI</li>
+            </ul>
+        
+            <p class="rightblock__jobexp-place">Coordinatrice logistique chez AUTO1</p>
+            <p class="rightblock__jobexp-date">De Janvier 2022 à Janvier 2023</p>
+            <ul class="rightblock__jobexp-list">
+                <li class="rightblock__jobexp-item" id="item1">Planification et suivi des livraisons</li>
+                <li class="rightblock__jobexp-item" id="item2">Suivi de la facturation</li>
+                <li class="rightblock__jobexp-item" id="item3">Elaboration et mise à jour de KPI</li>
+            </ul>
+        
+            <p class="rightblock__jobexp-place">Gestionnaire ADV chez ORTHOPARTNER</p>
+            <p class="rightblock__jobexp-date">De Mai 2020 à Décembre 2021</p>
+            <ul class="rightblock__jobexp-list">
+                <li class="rightblock__jobexp-item" id="item1">Gestion de la relation client</li>
+                <li class="rightblock__jobexp-item" id="item2">Gestion des stocks</li>
+                <li class="rightblock__jobexp-item" id="item3">Suivi des livraisons</li>
+                <li class="rightblock__jobexp-item" id="item3">Création et suivi de la facturation</li>
+            </ul>
+        
+            <p class="rightblock__educ">Diplômes/Formations</p>
+                <p class="rightblock__educname">Licence de psychologie</p>
+                <p class="rightblock__educdate">De 2016 à 2019</p>
+                <p class="rightblock__educplace">Université de Tours</p>
+                <p class="rightblock__educname">DUT GEA (Gestion des Entreprises et des Administrations)</p>
+                <p class="rightblock__educdate">De 2015 à 2016</p>
+                <p class="rightblock__educplace">Université de Tours</p>
+        
+            <p class="rightblock__skills">Compétences</p>
+            <ul class="rightblock__skills-list">
+                <li class="rightblock__skills-item">HTML 5 : Débutant</li>
+                <li class="rightblock__skills-item">CSS 3 : Débutant</li>
+                <li class="rightblock__skills-item">GITHUB : Débutant</li>
+            </ul>
+        </div>
+    </section>
 </body>
 </html>
