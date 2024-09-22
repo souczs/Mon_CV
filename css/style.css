@@ -55,7 +55,6 @@ body{
 
 .intro__job{
     font-size:1.4em;
-    margin-top:-5px;
 }
 
 .contact{
@@ -217,7 +216,8 @@ body{
 
 .end{
     background-color: #782221;
-    position:absolute;
+    padding-top:5px;
+    padding-bottom:5px;
     width: 1160px;
     color:white;
 }
