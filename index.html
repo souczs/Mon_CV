@@ -27,83 +27,72 @@
             <a href="tel:0366060201" class="contact__tel">0366060201</a>
     </address>
 
-    <section class="présentation">
-        <p class ="présentation__title">A propos</p>
-        <p class="présentation">Professionnelle <strong>dynamique</strong> et <strong>polyvalente</strong>, je suis passionnée par le développement de solutions innovantes et
+    <section id="block">
+        <!-- Division en 2 blocs pour les aligner avec Flexbox -->
+        <div class="leftblock" id="block1">
+            <p class ="leftblock__info">A propos</p>
+            <p class="leftblock__infodescription">Professionnelle <strong>dynamique</strong> et <strong>polyvalente</strong>, je suis passionnée par le développement de solutions innovantes et
             l'amélioration continue des processus. Dotée d'excellentes compétences en communication et en gestion de
             projet, je sais travailler efficacement <strong>en équipe</strong> tout en m'adaptant rapidement aux défis changeants.
             Motivée par l'apprentissage et l'atteinte d'objectifs ambitieux, je mets un point d'honneur à livrer des
             résultats de <strong>qualité</strong> tout en contribuant à la réussite collective de l'organisation.</p>
-    </section>
-
-    <section class="language">
-        <p class="language__title">Langues parlées</p>
-        <ul class="language__list">
-            <li class="language__item" id="item1">Français</li>
-            <li class="language__item" id="item2">Anglais</li>
-            <li class="language__item" id="item3">Espagnol</li>
-        </ul>
-    </section>
-
-    <section class="hobby">
-        <p class="hobby__title">Centres d'intérêt</p>
-        <ul class="hobby__list">
-            <li class="hobby__item" id="item1">Lecture</li>
-            <li class="hobby__item" id="item2">Podcast</li>
-            <li class="hobby__item" id="item3">Sport</li>
-    </section>
-
-    <section class="jobexp">
-        <p class="jobexp__title">Expériences professionnelles</p>
-        <div>
-        <p class="jobexp__place"># chez #</p>
-        <p class="jobexp__date">De # au #</p>
-        <ul class="jobexp__list">
-            <li class="jobexp__item" id="item1">Mission 1</li>
-            <li class="jobexp__item" id="item2">Mission 2</li>
-            <li class="jobexp__item" id="item3">Mission 3</li>
-        </ul>
-        </div>
-        <div>
-        <p class="jobexp__place"># chez #</p>
-        <p class="jobexp__date">De # au #</p>
-        <ul class="jobexp__list">
-            <li class="jobexp__item" id="item1">Mission 1</li>
-            <li class="jobexp__item" id="item2">Mission 2</li>
-            <li class="jobexp__item" id="item3">Mission 3</li>
-        </ul>
-        </div>
-        <div>
-            <p class="jobexp__place"># chez #</p>
-            <p class="jobexp__date">De # au #</p>
-            <ul class="jobexp__list">
-                <li class="jobexp__item" id="item1">Mission 1</li>
-                <li class="jobexp__item" id="item2">Mission 2</li>
-                <li class="jobexp__item" id="item3">Mission 3</li>
+        
+            <p class="leftblock__lang">Langues parlées</p>
+            <ul class="leftblock__langlist">
+                <li class="leftblock__langitem" id="item1">Français - Langue maternelle</li>
+                <li class="leftblock__langitem" id="item2">Anglais - Intermédiaire</li>
+                <li class="leftblock__langitem" id="item3">Espagnol - Débutant</li>
             </ul>
-            </div>
-    </section>
-
-    <section class="education">
-        <p class="education__title">Diplômes/Formations</p>
-        <div>
-            <p class="education__name">#</p>
-            <p class="education__date">De # au #</p>
-            <p class="education__place">#</p>
+        
+            <p class="leftblock__hobby">Centres d'intérêt</p>
+            <ul class="leftblock__hobbylist">
+                <li class="leftblock__hobbyitem" id="item1">Lecture</li>
+                <li class="leftblock__hobbyitem" id="item2">Cuisine</li>
+                <li class="leftblock__hobbyitem" id="item2">Voyages</li>
+                <li class="leftblock__hobbyitem" id="item3">Sport</li>
+            </ul>
         </div>
-        <div>
-            <p class="education__name">#</p>
-            <p class="education__date">De # au #</p>
-            <p class="education__place">#</p>
+        <div class="rightblock" id="block2">
+            <p class="rightblock__jobexp">Expériences professionnelles</p>
+            <p class="rightblock__jobexp-place"># chez #</p>
+            <p class="rightblock__jobexp-date">De # au #</p>
+            <ul class="rightblock__jobexp-list">
+                <li class="rightblock__jobexp-item" id="item1">Mission 1</li>
+                <li class="rightblock__jobexp-item" id="item2">Mission 2</li>
+                <li class="rightblock__jobexp-item" id="item3">Mission 3</li>
+            </ul>
+        
+            <p class="rightblock__jobexp-place"># chez #</p>
+            <p class="rightblock__jobexp-date">De # au #</p>
+            <ul class="rightblock__jobexp-list">
+                <li class="rightblock__jobexp-item" id="item1">Mission 1</li>
+                <li class="rightblock__jobexp-item" id="item2">Mission 2</li>
+                <li class="rightblock__jobexp-item" id="item3">Mission 3</li>
+            </ul>
+        
+            <p class="rightblock__jobexp-place"># chez #</p>
+            <p class="rightblock__jobexp-date">De # au #</p>
+            <ul class="rightblock__jobexp-list">
+                <li class="rightblock__jobexp-item" id="item1">Mission 1</li>
+                <li class="rightblock__jobexp-item" id="item2">Mission 2</li>
+                <li class="rightblock__jobexp-item" id="item3">Mission 3</li>
+            </ul>
+        
+            <p class="rightblock__educ">Diplômes/Formations</p>
+                <p class="rightblock__educname">#</p>
+                <p class="rightblock__educdate">De # au #</p>
+                <p class="rightblock__educplace">#</p>
+                <p class="rightblock__educname">#</p>
+                <p class="rightblock__educdate">De # au #</p>
+                <p class="rightblock__educplace">#</p>
+        
+            <p class="rightblock__skills">Compétences</p>
+            <ul class="rightblock__skills-list">
+                <li class="rightblock__skills-item">#</li>
+                <li class="rightblock__skills-item">#</li>
+                <li class="rightblock__skills-item">#</li>
+            </ul>
         </div>
-    </section>
-
-    <section class="skills">
-        <p class="skills__title">Compétences</p>
-        <ul class="skills__list">
-            <li class="skills__item">#</li>
-            <li class="skills__item">#</li>
-            <li class="skills__item">#</li>
     </section>
 </body>
 </html>
