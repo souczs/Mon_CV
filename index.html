@@ -2,23 +2,22 @@
 <html lang="fr">
 <head>
     <!-- Création de la branch meta & création de l'issue puis merge branch meta vers main avec pull request puis clôture de l'issue & git pull -->
-    <meta name="Curriculum Vitæ" content="Mon parcours scolaire et professionnel dans le cadre de la recherche de job."/>
-    <meta name="robots" content="noindex"/>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Curriculum Vitæ" content="Mon parcours scolaire et professionnel dans le cadre de la recherche de job.">
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
     <link rel="icon" href="img/cv.png" type="image/png">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Création de la branch intro puis merge branch intro vers main en local & git push -->
-    <section class="intro">
-        <!-- Pas de photo de moi-même mais une photo personnelle de vacancecs -->
-        <img src="./img/profil.JPG" alt="Photo d'un éléphant à Mysore" class="intro__img">
-        <!-- Je mets le nom et le poste en p et non en h1/h2 -->
-        <p class="intro__name">Sonia EB</p>
-        <p class="intro__job">Developpeuse web junior</p>
-    </section>
+    <header class="intro">
+        <!-- Pas de photo de moi-même mais une photo personnelle de vacances / Ouverture dans la même fenêtre -->
+        <a href="img/profil.JPG"><img src="img/profil.JPG" alt="Photo d'un éléphant à Mysore" class="intro__img"></a>
+        <h1 class="intro__name">Sonia EB</h1>
+        <h2 class="intro__job">Developpeuse web junior</h2>
+    </header>
     
     <!-- Création de la branch contact puis merge branch contact vers main avec pull request & git pull -->
     <address class="contact">
@@ -28,7 +27,7 @@
     </address>
 
      <!-- Création de la branch corps puis merge branch corps vers main avec pull request & git pull -->
-    <section class="block">
+    <div class="block">
         <!-- Division en 2 blocs pour les aligner avec Flexbox -->
         <div class="leftblock">
             <p class ="leftblock__info">A propos</p>
@@ -40,62 +39,79 @@
         
             <p class="leftblock__lang">Langues parlées</p>
             <ul class="leftblock__langlist">
-                <li class="leftblock__langitem" id="item1">Français - Langue maternelle</li>
-                <li class="leftblock__langitem" id="item2">Anglais - Intermédiaire</li>
-                <li class="leftblock__langitem" id="item3">Espagnol - Débutant</li>
+                <li class="leftblock__langitem">Français - Langue maternelle</li>
+                <li class="leftblock__langitem">Anglais - Intermédiaire</li>
+                <li class="leftblock__langitem">Espagnol - Débutant</li>
             </ul>
         
             <p class="leftblock__hobby">Centres d'intérêt</p>
             <ul class="leftblock__hobbylist">
-                <li class="leftblock__hobbyitem" id="item1">Lecture</li>
-                <li class="leftblock__hobbyitem" id="item2">Cuisine</li>
-                <li class="leftblock__hobbyitem" id="item2">Voyages</li>
-                <li class="leftblock__hobbyitem" id="item3">Sport</li>
+                <li class="leftblock__hobbyitem">Lecture</li>
+                <li class="leftblock__hobbyitem">Cuisine</li>
+                <li class="leftblock__hobbyitem">Voyages</li>
+                <li class="leftblock__hobbyitem">Sport</li>
             </ul>
         </div>
         <div class="rightblock">
             <p class="rightblock__jobexp">Expériences professionnelles</p>
-            <p class="rightblock__jobexp-place">Coordinatrice logistique chez CEVA LOGISITICS</p>
-            <p class="rightblock__jobexp-date">De Février 2023 à Aujourd'hui</p>
-            <ul class="rightblock__jobexp-list">
-                <li class="rightblock__jobexp-item" id="item3">Coordination des flux clients</li>
-                <li class="rightblock__jobexp-item" id="item1">Gestion de la relation client</li>
-                <li class="rightblock__jobexp-item" id="item2">Elaboration et mise à jour de KPI</li>
-            </ul>
-        
-            <p class="rightblock__jobexp-place">Coordinatrice logistique chez AUTO1</p>
-            <p class="rightblock__jobexp-date">De Janvier 2022 à Janvier 2023</p>
-            <ul class="rightblock__jobexp-list">
-                <li class="rightblock__jobexp-item" id="item1">Planification et suivi des livraisons</li>
-                <li class="rightblock__jobexp-item" id="item2">Suivi de la facturation</li>
-                <li class="rightblock__jobexp-item" id="item3">Elaboration et mise à jour de KPI</li>
-            </ul>
-        
-            <p class="rightblock__jobexp-place">Gestionnaire ADV chez ORTHOPARTNER</p>
-            <p class="rightblock__jobexp-date">De Mai 2020 à Décembre 2021</p>
-            <ul class="rightblock__jobexp-list">
-                <li class="rightblock__jobexp-item" id="item1">Gestion de la relation client</li>
-                <li class="rightblock__jobexp-item" id="item2">Gestion des stocks</li>
-                <li class="rightblock__jobexp-item" id="item3">Suivi des livraisons</li>
-                <li class="rightblock__jobexp-item" id="item3">Création et suivi de la facturation</li>
-            </ul>
-        
+
+                <div class="rightblock__jobexp0">
+                    <p class="rightblock__jobexp-place">Coordinatrice logistique chez CEVA LOGISITICS</p>
+                    <p class="rightblock__jobexp-date">De Février 2023 à Aujourd'hui</p>
+                    <ul class="rightblock__jobexp-list">
+                        <li class="rightblock__jobexp-item">Coordination des flux clients</li>
+                        <li class="rightblock__jobexp-item">Gestion de la relation client</li>
+                        <li class="rightblock__jobexp-item">Elaboration et mise à jour de KPI</li>
+                    </ul>
+                </div>
+
+                <div class="rightblock__jobexp0">
+                    <p class="rightblock__jobexp-place">Coordinatrice logistique chez AUTO1</p>
+                    <p class="rightblock__jobexp-date">De Janvier 2022 à Janvier 2023</p>
+                    <ul class="rightblock__jobexp-list">
+                        <li class="rightblock__jobexp-item">Planification et suivi des livraisons</li>
+                        <li class="rightblock__jobexp-item">Suivi de la facturation</li>
+                        <li class="rightblock__jobexp-item">Elaboration et mise à jour de KPI</li>
+                    </ul>
+                </div>
+
+                <div class="rightblock__jobexp0">
+                    <p class="rightblock__jobexp-place">Gestionnaire ADV chez ORTHOPARTNER</p>
+                    <p class="rightblock__jobexp-date">De Mai 2020 à Décembre 2021</p>
+                    <ul class="rightblock__jobexp-list">
+                        <li class="rightblock__jobexp-item">Gestion de la relation client</li>
+                        <li class="rightblock__jobexp-item">Gestion des stocks</li>
+                        <li class="rightblock__jobexp-item">Suivi des livraisons</li>
+                        <li class="rightblock__jobexp-item">Création et suivi de la facturation</li>
+                    </ul>
+                </div>
+
             <p class="rightblock__educ">Diplômes/Formations</p>
-                <p class="rightblock__educname">Licence de psychologie</p>
-                <p class="rightblock__educdate">De 2016 à 2019</p>
-                <p class="rightblock__educplace">Université de Tours</p>
-                <p class="rightblock__educname">DUT GEA (Gestion des Entreprises et des Administrations)</p>
-                <p class="rightblock__educdate">De 2015 à 2016</p>
-                <p class="rightblock__educplace">Université de Tours</p>
-        
+
+                <div class="rightblock__educ0">
+                    <p class="rightblock__educname">Licence de psychologie</p>
+                    <p class="rightblock__educdate">De 2016 à 2019</p>
+                    <p class="rightblock__educplace">Université de Tours</p>
+                </div>
+                <div class="rightblock__educ0">
+                    <p class="rightblock__educname">DUT GEA (Gestion des Entreprises et des Administrations)</p>
+                    <p class="rightblock__educdate">De 2015 à 2016</p>
+                    <p class="rightblock__educplace">Université de Tours</p>
+                </div>
+
             <p class="rightblock__skills">Compétences</p>
-            <ul class="rightblock__skills-list">
-                <li class="rightblock__skills-item">HTML 5 : Débutant</li>
-                <li class="rightblock__skills-item">CSS 3 : Débutant</li>
-                <li class="rightblock__skills-item">GITHUB : Débutant</li>
-            </ul>
-        </div>
-    </section>
+
+                <div class="rightblock__skills0">
+                    <ul class="rightblock__skills-list">
+                        <li class="rightblock__skills-item">HTML 5 : Débutant</li>
+                        <li class="rightblock__skills-item">CSS 3 : Débutant</li>
+                        <li class="rightblock__skills-item">GITHUB : Débutant</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+    <!-- Création de la branch footer puis merge branch footer vers main avec issue + pull request & git pull -->
     <footer class="end">
         <p class="end__media">
             <a href="https://fr.linkedin.com/school/centre-europeen-de-formation/" target="_blank" class="end__medialogo"><img src="img/logo-linkedin.png" alt="Lien vers LinkedIn"></a>
@@ -106,3 +122,5 @@
     </footer>
 </body>
 </html>
+<!-- Code HTML valide à la W3C : pas d'erreurs ni de warning & indentation ok 
+ Git Hub : 1er commit sur la branch main puis création d'une branch X -> création d'une issue -> création d'une pull request -> merge de la branch X vers la branch main -> clôture de l'issue -->
